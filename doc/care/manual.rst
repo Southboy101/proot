@@ -6,8 +6,8 @@
 Comprehensive Archiver for Reproducible Execution
 -------------------------------------------------
 
-:Date: 2014-09-15
-:Version: 2.2
+:Date: 2021-07-21
+:Version: 2.2.1
 :Manual section: 1
 
 
@@ -43,9 +43,9 @@ That means it is possible to alter explicitly the reproduced
 executions by changing content of the saved file-system, or by
 replaying different external events.
 
-.. _umockdev: https://github.com/martinpitt/umockdev/
+.. _umockdev: https://github.com/martinpitt/umockdev
 
-.. _artifact evaluation: http://www.artifact-eval.org/
+.. _artifact evaluation: http://www.artifact-eval.org
 
 Privacy
 -------
@@ -436,7 +436,7 @@ Downloads
 CARE is heavily based on PRoot_, that's why they are both hosted in
 the same repository: https://github.com/proot-me/proot. Previous CARE releases were packaged at https://github.com/proot-me/proot-static-build/releases, however, that repository has since been archived. The latest builds can be found under the job artifacts for the `GitLab CI/CD Pipelines <https://gitlab.com/proot/proot/pipelines>`_ for each commit. The following commands can be used to download the latest x86_64 binary for convenience::
 
-    curl -LO https://proot.gitlab.io/care/bin/care
+    curl -LO https://proot.gitlab.io/proot/bin/care
     chmod +x ./care
     care --version
 
@@ -445,8 +445,8 @@ the same repository: https://github.com/proot-me/proot. Previous CARE releases w
 Colophon
 ========
 
-Visit https://proot-me.github.io for help, bug reports, suggestions, patches, ...
-Copyright (C) 2020 PRoot Developers, licensed under GPL v2 or later.
+Visit https://proot-me.github.io/care for help, bug reports, suggestions, patches, ...
+Copyright (C) 2021 PRoot Developers, licensed under GPL v2 or later.
 
 ::
 

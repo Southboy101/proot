@@ -21,13 +21,16 @@ check:
 dist:
   stage: dist
   script:
-    - LDFLAGS="${LDFLAGS} -static" make -C src proot GIT=false
+    - LDFLAGS="${LDFLAGS} -static" make -C src proot care GIT=false
   after_script:
     - mkdir -p dist
     - cp src/proot dist/
+    - cp src/care dist/
     - cd dist
     - sha256sum ./proot > proot.sha256sum
+    - sha256sum ./care > care.sha256sum
     - md5sum ./proot > proot.md5sum
+    - md5sum ./care > care.md5sum
   artifacts:
     paths:
       - dist
